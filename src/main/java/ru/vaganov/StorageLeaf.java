@@ -4,14 +4,25 @@ public abstract class StorageLeaf extends StorageComponent
 {
     @Override
     @Deprecated
-    void add(StorageComponent component) throws Exception {throw new Exception("Нельзя удалять из листа дерева");}
+    public void add(StorageComponent component) throws Exception {throw new Exception("Нельзя удалять из листа дерева");}
 
     @Override
     @Deprecated
-    void remove(StorageComponent component) throws Exception {throw new Exception("Нельзя удалять из листа дерева");}
+    public void remove(StorageComponent component) throws Exception {throw new Exception("Нельзя удалять из листа дерева");}
     @Override
     @Deprecated
-    StorageComponent getChild(int position) throws Exception {throw new Exception("Не реализовано");};
+    public StorageComponent getChild(int position) throws Exception {throw new Exception("Нельзя получить потомков листа дерева");};
+
+
+    @Override
+    public boolean hasChild(){
+        return false;
+    }
+
+    @Override
+    public void signUpForRecord(Storage storage){
+        storage.addRecord(this.getName());
+    }
 }
 
 

@@ -1,11 +1,17 @@
 package ru.vaganov;
 
-public abstract class StorageComponent {
-    public abstract String getName();
-    abstract void add(StorageComponent component) throws Exception;
-    abstract void remove(StorageComponent component) throws Exception;
-    abstract StorageComponent getChild(int position) throws Exception;
+import java.util.logging.Logger;
 
+public abstract class StorageComponent {
+
+    public abstract String getName();
+    public abstract void add(StorageComponent component) throws Exception;
+    public abstract void remove(StorageComponent component) throws Exception;
+    public abstract StorageComponent getChild(int position) throws Exception;
+
+    public abstract boolean hasChild();
+
+    public abstract void signUpForRecord(Storage storage);
 }
 
 

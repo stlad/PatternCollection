@@ -1,23 +1,48 @@
 package ru.vaganov;
 
-public class StorageComposite extends StorageComponent{
-    @Override
-    public String getName() {
-        return null;
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class StorageComposite extends StorageComponent{
+
+    private List<StorageComponent> childs;
+    public StorageComposite(){
+        childs = new ArrayList<StorageComponent>();
     }
 
     @Override
-    void add(StorageComponent component) throws Exception {
-
+    public void add(StorageComponent component){
+        childs.add(component);
     }
 
     @Override
-    void remove(StorageComponent component) throws Exception {
-
+    public void remove(StorageComponent component) {
+        childs.remove(component);
     }
 
     @Override
-    StorageComponent getChild(int position) throws Exception {
-        return null;
+    public StorageComponent getChild(int position) throws IndexOutOfBoundsException {
+        if(position <0 || position>childs.size()){
+            throw new IndexOutOfBoundsException();
+        }
+
+        return childs.get(position);
+    }
+
+    @Override
+    public boolean hasChild() {
+        return !childs.isEmpty();
+    }
+
+    @Override
+    public void signUpForRecord(Storage storage){
+        for(StorageComponent component : childs){
+            component.signUpForRecord(storage);
+        }
+    }
+
+
+    public int size(){
+        return this.childs.size();
     }
 }
