@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a3e0b29-9277-407e-8014-f34c8666d1a8" name="Changes" comment="init">
+    <list default="true" id="9a3e0b29-9277-407e-8014-f34c8666d1a8" name="Changes" comment="начало реализации">
+      <change afterPath="$PROJECT_DIR$/src/test/java/CompositePatternTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CompositeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompositeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vaganov/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vaganov/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vaganov/StorageComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vaganov/StorageComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vaganov/StorageComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vaganov/StorageComposite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vaganov/StorageLeaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vaganov/StorageLeaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CompositeTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,22 +49,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.CompositeTests">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.vaganov.Main" />
+    <configuration name="CompositePatternTests$CompositeTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PatternCollection" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.vaganov.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="CompositePatternTests" />
+      <option name="MAIN_CLASS_NAME" value="CompositePatternTests$CompositeTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompositePatternTests$CompositeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PatternCollection" />
+      <option name="PACKAGE_NAME" value="CompositePatternTests" />
+      <option name="MAIN_CLASS_NAME" value="CompositePatternTests$CompositeTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompositePatternTests$LeafTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PatternCollection" />
+      <option name="PACKAGE_NAME" value="CompositePatternTests" />
+      <option name="MAIN_CLASS_NAME" value="CompositePatternTests$LeafTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,10 +92,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LeafTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PatternCollection" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LeafTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CompositeTests" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.LeafTests" />
+        <item itemvalue="JUnit.CompositePatternTests$CompositeTests (1)" />
+        <item itemvalue="JUnit.CompositePatternTests$CompositeTests" />
+        <item itemvalue="JUnit.CompositePatternTests$LeafTests" />
       </list>
     </recent_temporary>
   </component>
